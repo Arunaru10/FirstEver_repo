@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+           <div id="container"></div>
+           <script>
+            var imgReactElement = React.createElement("img",{src:"https://static.vecteezy.com/system/resources/thumbnails/037/098/807/small/ai-generated-a-happy-smiling-professional-man-light-blurry-office-background-closeup-view-photo.jpg",width:"400",hight:"400"});
+            var div1ReactElement = React.createElement("div",null,imgReactElement);
+
+            let h1ReactElement = React.createElement("h1",null,"Arun");
+            let pReactElement = React.createElement("p",null,"People with the name Arun have the lucky number 9 ");
+            let div2ReactElement = React.createElement("div",null,[h1ReactElement,pReactElement]);
+
+            var btnRaectElement = React.createElement("button",null,"Profile");
+            var div3ReactElement = React.createElement("div",null,btnRaectElement);
+
+            ReactDOM.render([div1ReactElement,div2ReactElement,div3ReactElement],document.getElementById("container"));
+           </script>
+    </body>
+</html>

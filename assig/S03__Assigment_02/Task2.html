@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div id="container"></div>
+        <script>
+            var h1ReactElement = React.createElement("h1",null,"QT Fashions");
+            var div1ReactElement = React.createElement("div",{id:"h1Element"},h1ReactElement);
+
+            let a1ReactElement = React.createElement("a",{style: {marginRight: "15px", fontSize: "22px"} },"Home")
+            let a2ReactElement = React.createElement("a",{style: {marginRight: "15px", fontSize: "22px"}},"Electronics")
+            let a3ReactElement = React.createElement("a",{style: {marginRight: "15px", fontSize: "22px"}},"Jewelery")
+            let a4ReactElement = React.createElement("a",{style: {marginRight: "15px", fontSize: "22px"}},"Mens")
+            let a5ReactElement = React.createElement("a",{style: {marginRight: "15px", fontSize: "22px"}},"Womens")
+            let a6ReactElement = React.createElement("a",{style: {marginRight: "15px", fontSize: "22px"}},"Kids");
+            let div2ReactElement = React.createElement("div",{id:"aElements"},[a1ReactElement,a2ReactElement,a3ReactElement,a4ReactElement,a5ReactElement,a6ReactElement]);
+
+            var btnRaectElement = React.createElement("button",null,"Login");
+            var div3ReactElement = React.createElement("div",{id:"buttonElement"},btnRaectElement);
+            // var maindiv = React.createElement("div",{id:"container"},)
+            ReactDOM.render([div1ReactElement,div2ReactElement,div3ReactElement],document.getElementById("container"));
+
+
+        </script>
+       
+    </body>
+</html>
